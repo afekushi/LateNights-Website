@@ -150,20 +150,20 @@
                 <div class="py-5">
                     <details class="group">
                         <summary class="flex list-none items-center justify-between font-medium cursor-pointer">
-                            <span class="text-base sm:text-lg">Can You Trust Us?</span>
+                            <span class="text-base sm:text-lg">What is Late Nights?</span>
                             <span class="transition-transform group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
                                     <path d="M6 9l6 6 6-6"></path>
                                 </svg>
                             </span>
                         </summary>
-                        <p class="mt-3 text-neutral-400 animate-fadeIn text-xs sm:text-sm">Our community is over 5000 users on Discord, and we've been dedicated to this project for over 8 years. Our ultimate goal is to provide a high-quality and safe product suitable for the greatest number of players. Our extensive experience and commitment to quality have earned us the trust and support of thousands. Join us and be part of a trusted and vibrant community!</p>
+                        <p class="mt-3 text-neutral-400 animate-fadeIn text-xs sm:text-sm">We are a group of people having fun making Games</p>
                     </details>
                 </div>
                 <div class="py-5">
                     <details class="group">
                         <summary class="flex list-none items-center justify-between font-medium cursor-pointer">
-                            <span class="text-base sm:text-lg">How Can I Open a JAR File?</span>
+                            <span class="text-base sm:text-lg">What type of games do you create?</span>
                             <span class="transition-transform group-open:rotate-180">
                                 <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
                                     <path d="M6 9l6 6 6-6"></path>
@@ -171,9 +171,7 @@
                             </span>
                         </summary>
                         <p class="mt-3 text-neutral-400 animate-fadeIn text-xs sm:text-sm">
-                            First, make sure you have <a class="text-blue-700" href="https:java.com">Java</a>
-                            installed on your computer. If you continue to experience issues, you can download and run <a class="text-blue-700" href="https://johann.loefflmann.net/downloads/jarfix.exe">jarfix</a>
-                            to fix any problems. If the issue persists, join our Discord community, and we'll be happy to help!
+                            We create the games we're passionate about, exploring a variety of genres and styles. Our focus is on crafting unique and engaging experiences, allowing our creativity and imagination to guide each project. Whether it's an action-packed adventure or a thought-provoking puzzle game, we love experimenting with different ideas to bring fresh, exciting games to life.
                         </p>
                     </details>
                 </div>
@@ -252,13 +250,6 @@
         document.getElementById('modal-div').classList.remove('hidden');
         let random = Math.random().toString(36).slice(2, 7 + Math.floor(Math.random() * 10));
         document.getElementById("modal-input").value = random + '.jar';
-    }
-    function download(name) {
-        baselink = "https://doomsdayclient.com/loader/";
-        let extensionIndex = name.lastIndexOf('.');
-        let newName = (extensionIndex !== -1) ? name : name + ".jar";
-        window.location.href = baselink + newName;
-    }
     function closeModal() {
         document.getElementById('modal-div').classList.add('hidden');
     }
